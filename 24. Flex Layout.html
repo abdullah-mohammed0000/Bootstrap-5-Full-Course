@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Layout</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+<body>
+    <!-- responsive flex items -->
+<div class="card-container d-flex flex-sm-column flex-md-row  justify-content-lg-center bg-success p-3">
+<div class="card w-25">
+  <div class="card-body">
+    <h4 class="card-title">card title</h4>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+  </div>
+</div>
+<div class="card w-25">
+  <div class="card-body">
+    <h4 class="card-title">card title</h4>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+  </div>
+</div>
+<div class="card w-25">
+  <div class="card-body">
+    <h4 class="card-title">card title</h4>
+    <p class="card-text">
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+    </p>
+  </div>
+</div>
+</div>
+<!-- horizontal alignment  -->
+<!-- justify-content-value; here value can be start, end, center, between, around, evenly -->
+<div
+  class="card-container d-flex flex-sm-column flex-md-row bg-success p-3 justify-content-evenly">
+  <div class="card w-25">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+</div>
+<!-- vertical alignment -->
+<!-- align-items-value; here value can be start,end,center, stretch -->
+
+<div
+  class="card-container d-flex flex-sm-column flex-md-row bg-success p-3 align-items-center" style="height: 100vh">
+  <div class="card w-25">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- horizontal and vertical alignment together -->
+
+<div
+  class="card-container d-flex  flex-sm-column flex-md-row  bg-primary p-3 justify-content-center align-items-center"
+  style="height: 100vh">
+  <div class="card w-25 m-1">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25 m-1">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25 m-1">
+    <div class="card-body">
+      <h4 class="card-title">card title</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div
+  class="card-container d-flex flex-sm-column flex-md-row bg-primary p-3 justify-content-center align-items-center"
+  style="height: 100vh">
+  <div class="card w-25 m-1 order-3">
+    <div class="card-body">
+      <h4 class="card-title">card title1</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25 m-1 order-1">
+    <div class="card-body">
+      <h4 class="card-title">card title2</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25 m-1 order-2">
+    <div class="card-body">
+      <h4 class="card-title">card title3</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- align-self: start / end/ center / stretched -->
+<div
+  class="card-container d-flex flex-sm-column flex-md-row bg-primary p-3 justify-content-center align-items-center"
+  style="height: 100vh">
+  <div class="card w-25 m-1 align-self-end">
+    <div class="card-body">
+      <h4 class="card-title">card title1</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25 m-1 ">
+    <div class="card-body">
+      <h4 class="card-title">card title2</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+  <div class="card w-25 m-1 align-self-start">
+    <div class="card-body">
+      <h4 class="card-title">card title3</h4>
+      <p class="card-text">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+</html>
